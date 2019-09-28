@@ -95,6 +95,7 @@ int main() {
   req(hv_vmx_vcpu_write_vmcs(vcpu, VMCS_GUEST_CR3, 0x0));
   req(hv_vmx_vcpu_write_vmcs(vcpu, VMCS_GUEST_CR4, 0x2000));
 
+  // Online assembly: https://defuse.ca/online-x86-assembler.htm#disassembly
   // loads 0x1234 to ax if in 16-bit mode
   // loads 0x90901234 to eax if in 32-bit mode
   //     mov ax, 0x1234
